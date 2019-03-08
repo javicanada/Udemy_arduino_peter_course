@@ -1,4 +1,4 @@
-/*  0770 - Multiple 8x8 LED matrix display
+ *  0770 - Multiple 8x8 LED matrix display
  * 
  * This sketch shows you how to display simple shapes and animation
  * on four 8x8 LED matrix display
