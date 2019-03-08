@@ -1,4 +1,6 @@
-/*  0760 - Single 8x8 LED matrix display
+#include <MD_MAXPanel.h>
+
+ *  0760 - Single 8x8 LED matrix display
  * 
  * This sketch shows you how to display simple shapes and animation
  * on a 8x8 LED matrix display
