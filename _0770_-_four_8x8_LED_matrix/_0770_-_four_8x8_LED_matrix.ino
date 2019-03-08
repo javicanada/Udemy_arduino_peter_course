@@ -1,54 +1,10 @@
- *  0770 - Multiple 8x8 LED matrix display
- * 
- * This sketch shows you how to display simple shapes and animation
- * on four 8x8 LED matrix display
- * 
- * The sketch contains instructions that demonstrate various primitives, like pixels
- * lines and circles. Uncomment the instructions that you are interested in to 
- * see them in action.
- * 
- * This sketch was written by Peter Dalmaris for Arduino Step by Step.
- * 
- * Components
- * ----------
- *  - Arduino Uno
- *  - 4 x 8x8 LED matrix display with the Max72xx driver IC
-
- *  - Jumper wires
- *  
- *  Libraries
- *  ---------
- *  - SPI (Comes with the Arduino IDE)
- *  - Adafruit_GFX
- *  - Max72xxPanel
- *
- * Connections
- * -----------
- *  
- *  Arduino Uno   |     8x8 LED Matrix
- *  ------------------------------
- *        5V      |      VCC
- *        GND     |      GND
- *        11      |      DIN (SPI data)
- *        13      |      CLK (SPI Clock)
- *        10      |      CS
- *        
- *  Other information
- *  ------------------
- *  For more info on the graphics primitives that you can use, see https://github.com/adafruit/Adafruit-GFX-Library/blob/master/Adafruit_GFX.h
- *  For more info on the MAX library functions, see https://github.com/markruys/arduino-Max72xxPanel/blob/master/Max72xxPanel.h
- *  
- *  Created on May 22 2017 by Peter Dalmaris
- * 
- */
-
 #include <SPI.h>
 #include <Adafruit_GFX.h>
-#include <Max72xxPanel.h>
+#include <MD_MAXPanel.h>
 
 int pinCS = 10; // Attach CS to this pin, DIN to MOSI and CLK to SCK (cf http://arduino.cc/en/Reference/SPI )
 
-Max72xxPanel matrix = Max72xxPanel(pinCS, 4, 1);  // This constructor needs the CS pin and the display dimensions
+MD_MAXpanel.h= Max72xxPanel(pinCS, 4, 1);  // This constructor needs the CS pin and the display dimensions
 
 const int total_pixels_in_smiley=25;
 const int total_coordinates_per_pixel=2;
